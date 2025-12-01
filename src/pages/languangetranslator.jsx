@@ -46,7 +46,7 @@ const home = () => {
       const translatordata = await fetch("https://deep-translate1.p.rapidapi.com/language/translate/v2", {
         method: 'POST',
         headers: {
-          'x-rapidapi-key': '',
+          'x-rapidapi-key': import.meta.env.VITE_TRANSLATOR_KEY,
           'x-rapidapi-host': 'deep-translate1.p.rapidapi.com',
           'Content-Type': 'application/json'
 
